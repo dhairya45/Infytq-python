@@ -21,7 +21,7 @@ class Applicant:
         return Applicant.__application_dict
         
     def generate_applicant_id(self):
-        if Applicant.__applicant_id_count==None:
+        if Applicant.__applicant_id_count is None:
             Applicant.__applicant_id_count=1000
             Applicant.__applicant_id_count+=1
             self.__applicant_id=Applicant.__applicant_id_count
